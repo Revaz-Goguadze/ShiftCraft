@@ -46,16 +46,16 @@ INSERT INTO user_skills (user_id, skill_id, level) VALUES
 
 -- Create sample shift templates
 INSERT INTO shift_templates (id, location_id, role_id, name, start_time, end_time, break_minutes) VALUES 
-  ('template1-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', '22222222-2222-2222-2222-222222222222', 'Day Shift Nursing', '08:00:00', '16:00:00', 30),
-  ('template2-2222-2222-2222-222222222222', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', '22222222-2222-2222-2222-222222222222', 'Night Shift Nursing', '20:00:00', '04:00:00', 30),
-  ('template3-3333-3333-3333-333333333333', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', '22222222-2222-2222-2222-222222222222', 'Lab Shift', '09:00:00', '17:00:00', 45);
+  ('a1111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', '22222222-2222-2222-2222-222222222222', 'Day Shift Nursing', '08:00:00', '16:00:00', 30),
+  ('a2222222-2222-2222-2222-222222222222', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', '22222222-2222-2222-2222-222222222222', 'Night Shift Nursing', '20:00:00', '04:00:00', 30),
+  ('a3333333-3333-3333-3333-333333333333', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', '22222222-2222-2222-2222-222222222222', 'Lab Shift', '09:00:00', '17:00:00', 45);
 
 -- Link templates to required skills
 INSERT INTO template_skill_requirements (template_id, skill_id) VALUES 
-  ('template1-1111-1111-1111-111111111111', '55555555-5555-5555-5555-555555555555'), -- Day Nursing -> Nursing skill
-  ('template2-2222-2222-2222-222222222222', '55555555-5555-5555-5555-555555555555'), -- Night Nursing -> Nursing skill
-  ('template2-2222-2222-2222-222222222222', '66666666-6666-6666-6666-666666666666'), -- Night Nursing -> Emergency skill
-  ('template3-3333-3333-3333-333333333333', '77777777-7777-7777-7777-777777777777'); -- Lab Shift -> Laboratory skill
+  ('a1111111-1111-1111-1111-111111111111', '55555555-5555-5555-5555-555555555555'), -- Day Nursing -> Nursing skill
+  ('a2222222-2222-2222-2222-222222222222', '55555555-5555-5555-5555-555555555555'), -- Night Nursing -> Nursing skill
+  ('a2222222-2222-2222-2222-222222222222', '66666666-6666-6666-6666-666666666666'), -- Night Nursing -> Emergency skill
+  ('a3333333-3333-3333-3333-333333333333', '77777777-7777-7777-7777-777777777777'); -- Lab Shift -> Laboratory skill
 
 -- Insert default rule configurations
 INSERT INTO rule_configs (scope, name, value_text) VALUES 
@@ -71,14 +71,14 @@ WHERE name = 'OVERTIME_THRESHOLD';
 
 -- Create some sample shift instances for the current week
 INSERT INTO shift_instances (id, template_id, shift_date, status) VALUES 
-  ('shift001-1111-1111-1111-111111111111', 'template1-1111-1111-1111-111111111111', CURRENT_DATE, 'PUBLISHED'),
-  ('shift002-2222-2222-2222-222222222222', 'template1-1111-1111-1111-111111111111', CURRENT_DATE + 1, 'PUBLISHED'),
-  ('shift003-3333-3333-3333-333333333333', 'template2-2222-2222-2222-222222222222', CURRENT_DATE, 'PUBLISHED'),
-  ('shift004-4444-4444-4444-444444444444', 'template3-3333-3333-3333-333333333333', CURRENT_DATE, 'PUBLISHED');
+  ('b1111111-1111-1111-1111-111111111111', 'a1111111-1111-1111-1111-111111111111', CURRENT_DATE, 'PUBLISHED'),
+  ('b2222222-2222-2222-2222-222222222222', 'a1111111-1111-1111-1111-111111111111', CURRENT_DATE + 1, 'PUBLISHED'),
+  ('b3333333-3333-3333-3333-333333333333', 'a2222222-2222-2222-2222-222222222222', CURRENT_DATE, 'PUBLISHED'),
+  ('b4444444-4444-4444-4444-444444444444', 'a3333333-3333-3333-3333-333333333333', CURRENT_DATE, 'PUBLISHED');
 
 -- Create sample assignments
 INSERT INTO assignments (id, shift_instance_id, user_id, status, assigned_by) VALUES 
-  ('assign01-1111-1111-1111-111111111111', 'shift001-1111-1111-1111-111111111111', 'dddddddd-dddd-dddd-dddd-dddddddddddd', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc'),
-  ('assign02-2222-2222-2222-222222222222', 'shift002-2222-2222-2222-222222222222', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc'),
-  ('assign03-3333-3333-3333-333333333333', 'shift003-3333-3333-3333-333333333333', 'dddddddd-dddd-dddd-dddd-dddddddddddd', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc'),
-  ('assign04-4444-4444-4444-444444444444', 'shift004-4444-4444-4444-444444444444', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc');
+  ('c1111111-1111-1111-1111-111111111111', 'b1111111-1111-1111-1111-111111111111', 'dddddddd-dddd-dddd-dddd-dddddddddddd', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc'),
+  ('c2222222-2222-2222-2222-222222222222', 'b2222222-2222-2222-2222-222222222222', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc'),
+  ('c3333333-3333-3333-3333-333333333333', 'b3333333-3333-3333-3333-333333333333', 'dddddddd-dddd-dddd-dddd-dddddddddddd', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc'),
+  ('c4444444-4444-4444-4444-444444444444', 'b4444444-4444-4444-4444-444444444444', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'ACTIVE', 'cccccccc-cccc-cccc-cccc-cccccccccccc');
