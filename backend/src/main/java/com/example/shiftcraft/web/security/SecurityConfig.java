@@ -37,8 +37,8 @@ public class SecurityConfig {
                 // Manager-only endpoints
                 .requestMatchers("/approvals/**", "/templates/**").hasRole("MANAGER")
                 
-                // Staff-only endpoints  
-                .requestMatchers("/requests/**").hasRole("STAFF")
+                // Available to both STAFF and MANAGER
+                .requestMatchers("/requests/**").hasAnyRole("STAFF", "MANAGER")
                 
                 // Common endpoints for all authenticated users
                 .requestMatchers("/schedule/**", "/timesheets/**", "/").authenticated()
