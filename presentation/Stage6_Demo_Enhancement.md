@@ -3,28 +3,28 @@
 
 ---
 
-## Demo Environment Status: ✅ READY
+## Demo Environment Status: READY
 
 Your existing DataLoader.java is already **presentation-perfect** with:
 
 ### **Demo Users (All password: password123)**
 ```
-🏥 MANAGER LOGIN
+MANAGER LOGIN
    Email: manager@shiftcraft.com  
    Name: John Manager
    Access: Full system (all pages)
 
-👨‍⚕️ STAFF LOGIN  
+STAFF LOGIN  
    Email: nurse1@shiftcraft.com
    Name: Alice Johnson (Expert Nursing + Emergency)
    Access: Personal schedule, requests only
 
-👩‍⚕️ STAFF LOGIN
+STAFF LOGIN
    Email: nurse2@shiftcraft.com  
    Name: Bob Wilson (Nursing + Laboratory Expert)
    Access: Personal schedule, requests only
 
-📞 RECEPTION LOGIN
+RECEPTION LOGIN
    Email: reception@shiftcraft.com
    Name: Dana Smith (Reception Expert)
    Access: Personal schedule, requests only
@@ -93,16 +93,16 @@ SUNDAY:    [Weekend] + Alice(Night)
 
 ### **Leave Requests Pre-Loaded**
 ```
-✅ APPROVED: Dana Smith - Personal leave (3 days ago, already processed)
-⏳ PENDING:  Alice Johnson - Vacation (10 days from now)
-⏳ PENDING:  Bob Wilson - Medical appointment (5 days from now)
+ APPROVED: Dana Smith - Personal leave (3 days ago, already processed)
+ PENDING:  Alice Johnson - Vacation (10 days from now)
+ PENDING:  Bob Wilson - Medical appointment (5 days from now)
 ```
 
 ### **Skills Matrix**
 ```
-Alice Johnson:  🥇 Expert Nursing + 🥈 Intermediate Emergency
-Bob Wilson:     🥈 Intermediate Nursing + 🥇 Expert Laboratory  
-Dana Smith:     🥇 Expert Reception
+Alice Johnson:   Expert Nursing +  Intermediate Emergency
+Bob Wilson:      Intermediate Nursing +  Expert Laboratory  
+Dana Smith:      Expert Reception
 ```
 
 ---
@@ -131,12 +131,12 @@ mvn spring-boot:run
 
 ### **Demo Flow Bookmarks**
 ```
-🔗 http://localhost:8080/login
-🔗 http://localhost:8080/schedule  
-🔗 http://localhost:8080/templates
-🔗 http://localhost:8080/requests
-🔗 http://localhost:8080/approvals  
-🔗 http://localhost:8080/timesheets
+ http://localhost:8080/login
+ http://localhost:8080/schedule  
+ http://localhost:8080/templates
+ http://localhost:8080/requests
+ http://localhost:8080/approvals  
+ http://localhost:8080/timesheets
 ```
 
 ---

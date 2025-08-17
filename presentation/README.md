@@ -8,7 +8,7 @@
 
 ---
 
-## 📸 Demo Screenshots
+## Demo Screenshots
 
 ### 1. Login & Authentication
 **File**: `01-Login-Authentication.png`
@@ -67,14 +67,14 @@
 
 ---
 
-## 🎯 EPAM Stage 6 Requirements Demonstrated
+## EPAM Stage 6 Requirements Demonstrated
 
-### ✅ Project Introduction (15 points)
+### Project Introduction
 - **Purpose**: Healthcare staff scheduling with automated workflows
 - **Target Users**: Healthcare managers and clinical staff
 - **Domain Focus**: Hospital/clinic scheduling compliance
 
-### ✅ Main Features (15 points)
+### Main Features
 - **Weekly Scheduling**: Manager and staff views with role-based access
 - **Leave Management**: Request submission and approval workflow
 - **Shift Templates**: Reusable patterns with automatic calculations
@@ -82,14 +82,14 @@
 - **Security**: Role-based access control with proper restrictions
 - **User Management**: Multiple user types with different permissions
 
-### ✅ Code Structure (15 points)
+### Code Structure
 - **3-Tier Architecture**: Presentation → Application → Data layers
 - **Database**: 8+ entities with many-to-many relationships
 - **Security**: Spring Security with role-based URL protection
 - **Business Logic**: Centralized in service layer
 - **Testing**: Unit tests with Mockito, integration tests
 
-### ✅ Technical Implementation
+### Technical Implementation
 - **Spring Boot 3.4.8** with Java 21
 - **Thymeleaf** server-side rendering
 - **Spring Data JPA** with proper entity relationships
@@ -99,7 +99,7 @@
 
 ---
 
-## 🚀 Architecture Highlights
+## Architecture Highlights
 
 ### Database Relationships
 - **User ↔ Role**: Many-to-Many (user_roles)
@@ -123,7 +123,7 @@
 
 ---
 
-## 🎥 Demo Flow (6 minutes)
+## Demo Flow (6 minutes)
 
 1. **Login** (30s): Manager authentication
 2. **Schedule Overview** (1m): Weekly schedule with all staff
@@ -134,10 +134,6 @@
 
 ---
 
-## 📊 Expected Grading: 55-60/60 points
+## Summary
 
-**Fully Functional Application** with comprehensive feature set, proper architecture implementation, and enterprise-grade security. All EPAM requirements exceeded.
-
----
-
-*Generated for EPAM Capstone Stage 6 Final Presentation*
+**Fully Functional Application** with comprehensive feature set, proper architecture implementation, and enterprise-grade security.

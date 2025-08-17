@@ -1,16 +1,6 @@
-Absolutely. Let’s finish Stage 1 in one sitting. I’ll give you two strong High Level Overviews, pick one to build, outline repo and task tracking setup, and hand you a copy ready submission section you can paste into EPAM LMS. If you want, I can also package this into a PDF in the next message.
+# ShiftCraft - Staff Scheduling and Time Management
 
-# What Stage 1 expects
-
-• Two High Level Overviews
-• Choose one idea and be ready to apply instructor feedback
-• Create a Git repository
-• Set up a task tracking space
-• Submit a short doc or pdf with links
-
----
-
-# Idea A. ShiftCraft • Staff Scheduling and Time Management for small clinics and labs
+## EPAM Capstone Stage 1 Project Overview
 
 ## One paragraph overview
 

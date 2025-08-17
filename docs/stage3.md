@@ -1,6 +1,4 @@
-Perfect, let’s lock down Stage 3 for ShiftCraft. I’ll follow the four steps exactly and give you a submission-ready ER model plus an SQL DDL starter you can push in a merge request.
-
-# Stage 3. Capstone Project Database Layer Design
+# ShiftCraft - Stage 3 Database Design
 
 System: ShiftCraft — staff scheduling and time management for small clinics and labs
 

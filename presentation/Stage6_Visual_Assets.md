@@ -17,7 +17,7 @@
 │  │ Controller  │  │ Controller  │  │    Controller       │  │
 │  └─────────────┘  └─────────────┘  └─────────────────────┘  │
 │                                                             │
-│  🔐 Spring Security  🎨 Thymeleaf Views  📱 Bootstrap UI   │
+│  Spring Security    Thymeleaf Views    Bootstrap UI       │
 └─────────────────────────────────────────────────────────────┘
                                │
                                ▼
@@ -32,7 +32,7 @@
 │  │  Service    │  │  Service    │  │      Service        │  │
 │  └─────────────┘  └─────────────┘  └─────────────────────┘  │
 │                                                             │
-│  ⚙️ Business Logic  🔄 Workflows  ✅ Validation Rules      │
+│  Business Logic     Workflows         Validation Rules    │
 └─────────────────────────────────────────────────────────────┘
                                │
                                ▼
@@ -47,15 +47,15 @@
 │  │Repository   │  │Repository   │  │    Repository       │  │
 │  └─────────────┘  └─────────────┘  └─────────────────────┘  │
 │                                                             │
-│  🗄️ Spring Data JPA  🐘 PostgreSQL  🚀 Flyway Migrations  │
+│  Spring Data JPA    PostgreSQL        Flyway Migrations  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 **Key Principles:**
-- ✅ **Separation of Concerns**: Each layer has distinct responsibility
-- ✅ **Dependency Direction**: Top-down dependencies only
-- ✅ **Layer Isolation**: No layer bypassing (Controller → Service → Repository)
-- ✅ **Single Responsibility**: One purpose per component
+- **Separation of Concerns**: Each layer has distinct responsibility
+- **Dependency Direction**: Top-down dependencies only
+- **Layer Isolation**: No layer bypassing (Controller → Service → Repository)
+- **Single Responsibility**: One purpose per component
 
 ---
 
@@ -151,14 +151,14 @@
 ```
 
 **Relationship Summary:**
-- 🔄 **User ↔ Role**: Many-to-Many (user_roles join table)
-- 🔄 **User ↔ Skill**: Many-to-Many (user_skills join table)  
-- ➡️ **Location → ShiftTemplate**: One-to-Many
-- ➡️ **ShiftTemplate → ShiftInstance**: One-to-Many
-- ➡️ **ShiftInstance → Assignment**: One-to-Many
-- ➡️ **User → LeaveRequest**: One-to-Many
-- ➡️ **User → Assignment**: One-to-Many
-- ➡️ **Timesheet → TimesheetEntry**: One-to-Many
+-  **User ↔ Role**: Many-to-Many (user_roles join table)
+-  **User ↔ Skill**: Many-to-Many (user_skills join table)  
+- ➡ **Location → ShiftTemplate**: One-to-Many
+- ➡ **ShiftTemplate → ShiftInstance**: One-to-Many
+- ➡ **ShiftInstance → Assignment**: One-to-Many
+- ➡ **User → LeaveRequest**: One-to-Many
+- ➡ **User → Assignment**: One-to-Many
+- ➡ **Timesheet → TimesheetEntry**: One-to-Many
 
 ---
 
@@ -230,12 +230,12 @@
 │  └─────────────┘  └─────────────┘  └─────────────────────┘  │
 │                                                             │
 │  SECURITY CONTROLS                                          │
-│  ✅ BCrypt Password Encoding                                │
-│  ✅ CSRF Token Validation                                   │
-│  ✅ Session Timeout (30 minutes)                            │
-│  ✅ Role-Based URL Protection                               │
-│  ✅ Remember Me Functionality                               │
-│  ✅ Logout with Session Invalidation                        │
+│   BCrypt Password Encoding                                │
+│   CSRF Token Validation                                   │
+│   Session Timeout (30 minutes)                            │
+│   Role-Based URL Protection                               │
+│   Remember Me Functionality                               │
+│   Logout with Session Invalidation                        │
 └─────────────────────────────────────────────────────────────┘
 ```
 

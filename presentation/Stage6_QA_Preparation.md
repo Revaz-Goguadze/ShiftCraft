@@ -1,11 +1,11 @@
 # ShiftCraft - Stage 6 Q&A Preparation
-## Confident Answers for Maximum Points (15/15)
+## Technical Questions and Answers
 
 ---
 
-## Q&A Strategy Overview
+## Q&A Overview
 
-**Goal**: Answer all questions confidently with technical depth to earn full 15 points
+**Goal**: Answer all questions confidently with technical depth
 **Approach**: Prepared answers for 6 major categories with specific examples
 **Backup**: Alternative explanations and concrete code references ready
 
@@ -259,14 +259,14 @@
 ## CONFIDENCE BUILDERS
 
 ### **Strong Technical Points to Emphasize:**
-- ✅ 85% test coverage with comprehensive unit and integration tests
-- ✅ Clean three-tier architecture with proper layer isolation
-- ✅ Role-based security with 403 error demonstration
-- ✅ Many-to-many relationships implemented correctly
-- ✅ Business logic centralized in service layer
-- ✅ Proper transaction boundaries and error handling
-- ✅ UUID primary keys for scalability
-- ✅ Custom repository queries with proper indexing considerations
+- 85% test coverage with comprehensive unit and integration tests
+- Clean three-tier architecture with proper layer isolation
+- Role-based security with 403 error demonstration
+- Many-to-many relationships implemented correctly
+- Business logic centralized in service layer
+- Proper transaction boundaries and error handling
+- UUID primary keys for scalability
+- Custom repository queries with proper indexing considerations
 
 ### **Demonstration-Ready Examples:**
 - User entity with @ManyToMany annotations

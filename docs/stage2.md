@@ -1,6 +1,4 @@
-nice, let’s lock down Stage 2 for your ShiftCraft project. Below is a complete, ready to submit write-up you can paste into your doc or pdf. It covers full functional and non-functional requirements, a cohesive use case model, and explicit objects, classes, and relationships. I also included CRC cards and text UML so you have optional extras.
-
-# Stage 2. Capstone Project Use Cases
+# ShiftCraft - Stage 2 Use Cases and Requirements
 
 System: ShiftCraft — staff scheduling and time management for small clinics and labs
 

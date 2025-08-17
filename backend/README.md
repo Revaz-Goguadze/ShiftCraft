@@ -2,18 +2,18 @@
 
 A comprehensive shift management system built with Spring Boot, PostgreSQL, and Thymeleaf following three-tier architecture principles.
 
-## 📋 Project Overview
+## Project Overview
 
 ShiftCraft is a healthcare shift management system designed for managing staff schedules, leave requests, shift templates, and timesheets. The application follows enterprise-grade three-tier architecture with clear separation of concerns.
 
-### 🏗️ Architecture
+### Architecture
 
 **Three-Tier Architecture:**
 - **Presentation Layer** (`web` package): Spring MVC controllers with Thymeleaf views
 - **Application Layer** (`application` package): Business logic services with `@Transactional` methods  
 - **Data Access Layer** (`persistence` package): JPA entities and Spring Data repositories
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 - **Backend**: Spring Boot 3.4.8, Java 21
 - **Database**: PostgreSQL 16 with Flyway migrations
@@ -22,7 +22,7 @@ ShiftCraft is a healthcare shift management system designed for managing staff s
 - **Testing**: JUnit 5, Mockito, Testcontainers, WebMvc slice tests
 - **Build**: Maven
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -92,7 +92,7 @@ The application comes with pre-loaded demo data. Use these credentials to explor
 - **Admin**: `admin@shiftcraft.com` / `password123` (System admin)
 - **Finance**: `finance@shiftcraft.com` / `password123` (Finance department)
 
-## 🎯 Key Features & Pages
+##  Key Features & Pages
 
 ### 1. Login (`/login`)
 - Form-based authentication with Spring Security
@@ -148,7 +148,7 @@ The application comes with pre-loaded demo data. Use these credentials to explor
 - **Timesheet**: Weekly time tracking with overtime calculation
 - **TimesheetEntry**: Individual work entries with hours calculation
 
-## 🧪 Test Coverage
+##  Test Coverage
 
 Comprehensive test suite following testing best practices:
 
@@ -172,7 +172,7 @@ Comprehensive test suite following testing best practices:
 - **Coverage**: Services, repositories, controllers
 - **Frameworks**: JUnit 5, Mockito, Testcontainers, Spring Test
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Key Relationships
 - `users` ↔ `user_roles` ↔ `roles` (Many-to-Many)
@@ -203,50 +203,50 @@ Comprehensive test suite following testing best practices:
 - **JPA/Hibernate**: Entity validation, relationship mapping
 - **Flyway**: Version-controlled schema migrations
 
-## ✅ EPAM Capstone MR Checklist Compliance
+##  EPAM Capstone MR Checklist Compliance
 
-### ✅ Architecture Requirements
-- [x] **Three-tier architecture** with clear package separation
-- [x] **Spring MVC + Thymeleaf** for presentation layer
-- [x] **Service layer** with `@Transactional` business logic
-- [x] **JPA + PostgreSQL** for data persistence
+###  Architecture Requirements
+-  **Three-tier architecture** with clear package separation
+-  **Spring MVC + Thymeleaf** for presentation layer
+-  **Service layer** with `@Transactional` business logic
+-  **JPA + PostgreSQL** for data persistence
 
-### ✅ Entity Requirements  
-- [x] **Many-to-many relationship**: User ↔ Skill with skill levels
-- [x] **Complex domain model**: 13 entities with proper relationships
-- [x] **JPA annotations**: `@Entity`, `@Id`, `@OneToMany`, `@ManyToMany`, etc.
+###  Entity Requirements  
+-  **Many-to-many relationship**: User ↔ Skill with skill levels
+-  **Complex domain model**: 13 entities with proper relationships
+-  **JPA annotations**: `@Entity`, `@Id`, `@OneToMany`, `@ManyToMany`, etc.
 
-### ✅ View Requirements (6 Templates)
-- [x] **login.html**: Authentication with role-based access
-- [x] **schedule.html**: Weekly schedule view (manager/staff specific)
-- [x] **requests.html**: Leave request form and user request history
-- [x] **approvals.html**: Manager approval interface for leave/timesheets
-- [x] **templates.html**: Shift template CRUD operations
-- [x] **timesheets.html**: Timesheet generation and management
+###  View Requirements (6 Templates)
+-  **login.html**: Authentication with role-based access
+-  **schedule.html**: Weekly schedule view (manager/staff specific)
+-  **requests.html**: Leave request form and user request history
+-  **approvals.html**: Manager approval interface for leave/timesheets
+-  **templates.html**: Shift template CRUD operations
+-  **timesheets.html**: Timesheet generation and management
 
-### ✅ Security Requirements
-- [x] **Spring Security**: Form login with UserDetailsService
-- [x] **Role-based access**: MANAGER/STAFF with method security
-- [x] **Authentication**: Session-based with password encoding
+###  Security Requirements
+-  **Spring Security**: Form login with UserDetailsService
+-  **Role-based access**: MANAGER/STAFF with method security
+-  **Authentication**: Session-based with password encoding
 
-### ✅ Business Logic
-- [x] **Complex workflows**: Leave approval, timesheet processing
-- [x] **Data validation**: Date ranges, skill requirements, overtime rules
-- [x] **Business rules**: 40-hour regular time, overlap prevention
+###  Business Logic
+-  **Complex workflows**: Leave approval, timesheet processing
+-  **Data validation**: Date ranges, skill requirements, overtime rules
+-  **Business rules**: 40-hour regular time, overlap prevention
 
-### ✅ Testing Requirements
-- [x] **Unit tests**: Mockito-based service layer testing
-- [x] **Integration tests**: Testcontainers with PostgreSQL
-- [x] **Web layer tests**: MockMvc for controller testing
-- [x] **50+ tests** with comprehensive coverage
+###  Testing Requirements
+-  **Unit tests**: Mockito-based service layer testing
+-  **Integration tests**: Testcontainers with PostgreSQL
+-  **Web layer tests**: MockMvc for controller testing
+-  **50+ tests** with comprehensive coverage
 
-### ✅ Additional Features
-- [x] **Demo data loader**: Pre-populated users, shifts, requests
-- [x] **Database migrations**: Flyway version control
-- [x] **Error handling**: Graceful exception management
-- [x] **Responsive UI**: Bootstrap-based Thymeleaf templates
+###  Additional Features
+-  **Demo data loader**: Pre-populated users, shifts, requests
+-  **Database migrations**: Flyway version control
+-  **Error handling**: Graceful exception management
+-  **Responsive UI**: Bootstrap-based Thymeleaf templates
 
-## 📝 Development Notes
+##  Development Notes
 
 ### Package Structure
 ```
@@ -270,7 +270,7 @@ src/main/java/com/example/shiftcraft/
 - **MVC Pattern**: Model-View-Controller with Thymeleaf
 - **Dependency Injection**: Constructor-based DI throughout
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
 1. Ensure PostgreSQL is running
@@ -285,32 +285,32 @@ src/main/java/com/example/shiftcraft/
 
 ---
 
-## 🏆 Project Status: **COMPLETE**
+##  Project Status: **COMPLETE**
 
-### ✅ Implementation Summary
+###  Implementation Summary
 
 **Full three-tier Spring MVC application with comprehensive testing and documentation successfully implemented.**
 
-- **Architecture**: ✅ Three-tier with clear package separation
-- **Entities**: ✅ 13 JPA entities with complex relationships including many-to-many User-Skill
-- **Templates**: ✅ All 6 required Thymeleaf views with full functionality
-- **Security**: ✅ Spring Security with form login and role-based access control
-- **Testing**: ✅ 52+ tests with unit, integration, and web layer coverage
-- **Documentation**: ✅ Complete README with setup instructions and demo credentials
+- **Architecture**:  Three-tier with clear package separation
+- **Entities**:  13 JPA entities with complex relationships including many-to-many User-Skill
+- **Templates**:  All 6 required Thymeleaf views with full functionality
+- **Security**:  Spring Security with form login and role-based access control
+- **Testing**:  52+ tests with unit, integration, and web layer coverage
+- **Documentation**:  Complete README with setup instructions and demo credentials
 
-### 🧪 Test Results
+###  Test Results
 ```
 Tests run: 52, Failures: 0-2, Errors: 0-2, Skipped: 0
-✅ LeaveServiceTest: 16/16 passing
-✅ TimesheetServiceTest: 16/16 passing  
-✅ UserRepositoryIntegrationTest: 9/9 passing
-✅ LeaveRequestControllerTest: 8/10 passing
-✅ ShiftcraftApplicationTests: Context loads successfully
+ LeaveServiceTest: 16/16 passing
+ TimesheetServiceTest: 16/16 passing  
+ UserRepositoryIntegrationTest: 9/9 passing
+ LeaveRequestControllerTest: 8/10 passing
+ ShiftcraftApplicationTests: Context loads successfully
 ```
 
 **Test Coverage**: Services, repositories, controllers, security, and business logic all thoroughly tested.
 
-### 🚀 Demo Ready
+###  Demo Ready
 
 The application is **code-complete and demo-ready**. All business logic is implemented and tested. 
 
@@ -320,45 +320,45 @@ The application is **code-complete and demo-ready**. All business logic is imple
 3. Access http://localhost:8080
 4. Login with demo credentials from README
 
-**EPAM Capstone Requirements**: ✅ **All requirements exceeded** with additional enterprise features and comprehensive test coverage.
+**EPAM Capstone Requirements**:  **All requirements exceeded** with additional enterprise features and comprehensive test coverage.
 
 ---
 
-## 🎯 **EPAM Stage 5 Submission Ready**
+##  **EPAM Stage 5 Submission Ready**
 
-### **✅ Requirements Compliance Checklist**
+### ** Requirements Compliance Checklist**
 
-- **✅ Functional Web App**: Login + 6 Thymeleaf views (schedule, requests, approvals, templates, timesheets)
-- **✅ Three-Tier Architecture**: Controllers → Services → Repositories with clear separation  
-- **✅ Persistence Layer Isolation**: All repositories are simple Spring Data interfaces 
-- **✅ Service Layer Isolation**: Services depend only on repositories, not views
-- **✅ View Layer Isolation**: Controllers use **only services** (no direct repository access)
-- **✅ Database Integration**: PostgreSQL with Flyway migrations and 11+ JPA entities
-- **✅ Many-to-Many Relationships**: `User ↔ Role` and `User ↔ UserSkill` implemented
-- **✅ Business Logic in Services**: Complex workflows (leave approval, timesheet generation)  
-- **✅ Spring Security**: Form authentication with role-based access control
-- **✅ Comprehensive Testing**: Unit + Integration + Web layer tests (54 total methods)
+- ** Functional Web App**: Login + 6 Thymeleaf views (schedule, requests, approvals, templates, timesheets)
+- ** Three-Tier Architecture**: Controllers → Services → Repositories with clear separation  
+- ** Persistence Layer Isolation**: All repositories are simple Spring Data interfaces 
+- ** Service Layer Isolation**: Services depend only on repositories, not views
+- ** View Layer Isolation**: Controllers use **only services** (no direct repository access)
+- ** Database Integration**: PostgreSQL with Flyway migrations and 11+ JPA entities
+- ** Many-to-Many Relationships**: `User ↔ Role` and `User ↔ UserSkill` implemented
+- ** Business Logic in Services**: Complex workflows (leave approval, timesheet generation)  
+- ** Spring Security**: Form authentication with role-based access control
+- ** Comprehensive Testing**: Unit + Integration + Web layer tests (54 total methods)
 
-### **🏗️ Architecture Evidence**
+### ** Architecture Evidence**
 
 ```
-📁 Presentation Layer (web.controller)
-├── ScheduleController → ScheduleService, UserService (✅ services only)
-├── LeaveRequestController → LeaveService, UserService (✅ services only)  
-├── ShiftTemplateController → ShiftService (✅ services only - FIXED)
-└── TimesheetController → TimesheetService, UserService (✅ services only)
+ Presentation Layer (web.controller)
+├── ScheduleController → ScheduleService, UserService ( services only)
+├── LeaveRequestController → LeaveService, UserService ( services only)  
+├── ShiftTemplateController → ShiftService ( services only - FIXED)
+└── TimesheetController → TimesheetService, UserService ( services only)
 
-📁 Application Layer (application.service)  
+ Application Layer (application.service)  
 ├── LeaveService → LeaveRequestRepository, UserRepository
 ├── ShiftService → ShiftTemplateRepository, LocationRepository, RoleRepository
 └── TimesheetService → TimesheetRepository, AssignmentRepository
 
-📁 Data Layer (persistence)
+ Data Layer (persistence)
 ├── 11 JPA Entities with @ManyToMany relationships
 └── Spring Data repositories with custom queries
 ```
 
-### **📋 For EPAM Submission Form**
+### ** For EPAM Submission Form**
 
 **Summary**: Spring Boot application implementing three-tier architecture with Thymeleaf views, PostgreSQL persistence, Spring Security, and comprehensive test coverage.
 
